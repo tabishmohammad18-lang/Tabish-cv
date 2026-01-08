@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Tabish - Full Stack CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --title-font: 'Montserrat', sans-serif;
+            --body-font: 'Open Sans', sans-serif;
+            --code-font: 'Roboto Mono', monospace;
+            --primary-color: #1a1a1a;
+            --accent-color: #0056b3;
+            --border-color: #eeeeee;
+        }
+
+        body {
+            font-family: var(--body-font);
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .resume-container {
+            background: white;
+            width: 210mm;
+            min-height: 297mm;
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            box-sizing: border-box;
+            color: var(--primary-color);
+        }
+
+        header {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        h1 { 
+            font-family: var(--title-font);
+            margin: 0; 
+            font-size: 32pt; 
+            letter-spacing: -1px;
+            color: var(--primary-color);
+        }
+
+        .contact-info { 
+            margin-top: 10px; 
+            font-size: 10.5pt; 
+            color: #555;
+            font-weight: 400;
+        }
+
+        section { margin-bottom: 25px; }
+
+        .section-title {
+            font-family: var(--title-font);
+            font-size: 12pt;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-bottom: 2px solid var(--primary-color);
+            margin-bottom: 12px;
+            padding-bottom: 3px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            margin-top: 10px;
+            font-size: 11pt;
+        }
+
+        .item-sub { 
+            color: var(--accent-color); 
+            font-size: 9.5pt; 
+            font-weight: 600;
+            margin-bottom: 8px; 
+        }
+        
+        ul { margin: 8px 0; padding-left: 18px; }
+        li { font-size: 10pt; line-height: 1.6; margin-bottom: 4px; color: #333; }
+
+        /* Tech Skills specific font */
+        .skills-grid p { 
+            margin: 8px 0; 
+            font-size: 10pt; 
+            line-height: 1.4;
+        }
+        
+        .code-text {
+            font-family: var(--code-font);
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 9.5pt;
+        }
+
+        .controls { margin-bottom: 20px; }
+        .btn-download {
+            font-family: var(--title-font);
+            background-color: var(--primary-color);
+            color: white;
+            padding: 14px 35px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.2s ease;
+        }
+        .btn-download:hover { background-color: var(--accent-color); transform: scale(1.05); }
+
+        @media print {
+            .controls { display: none; }
+            body { background: none; padding: 0; }
+            .resume-container { box-shadow: none; width: 100%; margin: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="controls">
+        <button class="btn-download" onclick="window.print()">PRINT PROFESSIONAL CV</button>
+    </div>
+
+    <div class="resume-container">
+        <header>
+            <h1>MOHAMMAD TABISH</h1>
+            <div class="contact-info">
+                Chapra Saran, Chota Telpa Korar • 7033372244 • tabishmohammad18@gmail.com
+            </div>
+        </header>
+
+        <section>
+            <div class="section-title">Objective</div>
+            <ul>
+                <li>Strategic <strong>Full Stack Developer</strong> and BCA candidate at Integral University, focused on building robust end-to-end applications.  Proficient in modern frontend frameworks and backend systems.</li>
+            </ul>
+        </section>
+
+        <section>
+            <div class="section-title">Education</div>
+            <div class="item-header">
+                <span>Integral University, Lucknow</span>
+                <span>Ongoing</span>
+            </div>
+            <div class="item-sub">Bachelor of Computer Applications (BCA) | CGPA: 8.00</div>
+
+            <div class="item-header">
+                <span>Intermediate (Bihar Board)</span>
+                <span>57%</span>
+            </div>
+            <div class="item-header">
+                <span>High School (CBSE Board)</span>
+                <span>57%</span>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">Technical Skills</div>
+            <div class="skills-grid">
+                <p><strong>Expertise:</span> Full Stack Web Development, Responsive UI Design, Database Management ,Junior Ai Developer</span> </p>
+                <p><strong>Languages:</strong><span class="code-text">HTML,</span><span class="code-text">CSS,</span><span class="code-text">Javascript,</span><span class="code-text">Java</span>, <span class="code-text">C++</span>, <span class="code-text">C</span> </p>
+                <p><strong>Dev Tools:</strong> Git, GitHub, VS Code </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">Key Projects</div>
+
+            <div class="item-header">
+                <span>Billing System Website</span>
+                <span><a href="https://srdecor.rf.gd/?i=1" target="_blank">View Site</a></span>
+            </div>
+            <ul>
+                <li>Designed a custom billing dashboard to automate invoice generation and record management.</li>
+                <li>Built using vanilla JS and CSS to ensure zero-dependency performance. [cite: 53]</li>
+            </ul>
+        </section>
+
+        <section>
+            <div class="section-title">Core Competencies</div>
+            <div class="item-header">
+                <span>Communication</span>
+            </div>
+            <ul>
+                <li>Fluent in English and Hindi for professional collaboration.</li>
+            </ul>
+            
+            <div class="item-header">
+                <span>Interests</span>
+            </div>
+            <ul>
+                <li>Analytical skill building through tech literature and gaming.</li>
+            </ul>
+        </section>
+    </div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
